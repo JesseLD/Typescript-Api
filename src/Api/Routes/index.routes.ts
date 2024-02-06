@@ -1,5 +1,4 @@
 import { Router, Request, Response } from "express";
-import { stat } from "fs";
 
 export const routes = Router();
 

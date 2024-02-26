@@ -8,6 +8,7 @@ import { userController } from "../../../Controllers/User/users.controller";
 /**
  * @Middleware User validation middleware to validate the request body
  */
+
 import {
   validateCreateUser,
   validateUpdateUser,
@@ -27,7 +28,7 @@ userRoutes.get("/", userController.findAll);
 
 /**
  * 
- * @get /Users/1 Should Return a sinlge user
+ * @get /Users/1 Should Return a single user
  * @param id Should be provided an id
  */
 userRoutes.get("/:id", userController.findOne);
